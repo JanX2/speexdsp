@@ -276,7 +276,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		73814AE00907FB1E00C478FC /* Development */ = {
+		73814AE00907FB1E00C478FC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
@@ -295,18 +295,19 @@
 					USE_KISS_FFT,
 				);
 				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = /Library/Frameworks;
+				INSTALL_PATH = "@rpath";
 				LIBRARY_STYLE = DYNAMIC;
 				MACH_O_TYPE = mh_dylib;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_BUNDLE_IDENTIFIER = org.xiph.speexdsp;
 				PRODUCT_NAME = Speex;
+				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = framework;
 				ZERO_LINK = YES;
 			};
-			name = Development;
+			name = Debug;
 		};
-		73814AE10907FB1E00C478FC /* Deployment */ = {
+		73814AE10907FB1E00C478FC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
@@ -323,59 +324,29 @@
 					USE_KISS_FFT,
 				);
 				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = /Library/Frameworks;
+				INSTALL_PATH = "@rpath";
 				LIBRARY_STYLE = DYNAMIC;
 				MACH_O_TYPE = mh_dylib;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_BUNDLE_IDENTIFIER = org.xiph.speexdsp;
 				PRODUCT_NAME = Speex;
+				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = framework;
 				ZERO_LINK = NO;
 			};
-			name = Deployment;
+			name = Release;
 		};
-		73814AE20907FB1E00C478FC /* Default */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				FRAMEWORK_VERSION = A;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Speex_Prefix.pch;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"EXPORT=''",
-					FLOATING_POINT,
-					USE_KISS_FFT,
-				);
-				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = /Library/Frameworks;
-				LIBRARY_STYLE = DYNAMIC;
-				MACH_O_TYPE = mh_dylib;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				PRODUCT_BUNDLE_IDENTIFIER = org.xiph.speexdsp;
-				PRODUCT_NAME = Speex;
-				WRAPPER_EXTENSION = framework;
-			};
-			name = Default;
-		};
-		73814AE40907FB1E00C478FC /* Development */ = {
+		73814AE40907FB1E00C478FC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 			};
-			name = Development;
+			name = Debug;
 		};
-		73814AE50907FB1E00C478FC /* Deployment */ = {
+		73814AE50907FB1E00C478FC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 			};
-			name = Deployment;
-		};
-		73814AE60907FB1E00C478FC /* Default */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Default;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -383,22 +354,20 @@
 		73814ADF0907FB1E00C478FC /* Build configuration list for PBXNativeTarget "Speex" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				73814AE00907FB1E00C478FC /* Development */,
-				73814AE10907FB1E00C478FC /* Deployment */,
-				73814AE20907FB1E00C478FC /* Default */,
+				73814AE00907FB1E00C478FC /* Debug */,
+				73814AE10907FB1E00C478FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Default;
+			defaultConfigurationName = Debug;
 		};
 		73814AE30907FB1E00C478FC /* Build configuration list for PBXProject "Speex_UB" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				73814AE40907FB1E00C478FC /* Development */,
-				73814AE50907FB1E00C478FC /* Deployment */,
-				73814AE60907FB1E00C478FC /* Default */,
+				73814AE40907FB1E00C478FC /* Debug */,
+				73814AE50907FB1E00C478FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Default;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
